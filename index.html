@@ -3,13 +3,14 @@
   <head>
     <title>JBC Token Viewer</title>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-    <script src="web3.js"></script>
+    <script src="./web3.js"></script>
   </head>
   <body>
     <h2>JBC Token</h2>
-    <button onclick="connectWallet()">Cüzdanı Bağla</button>
-    <p><strong>Cüzdan:</strong> <span id="wallet">Bağlı değil</span></p>
-    <p><strong>Token:</strong> <span id="tokenName">-</span> (<span id="tokenSymbol">-</span>)</p>
-    <p><strong>Bakiye:</strong> <span id="balance">0</span> JBC</p>
+    <button onclick="connectWallet()">Connect Wallet</button>
+
+    <p>Wallet: <span id="wallet">Not connected</span></p>
+    <p>Token: <span id="symbol">-</span> (<span id="name">-</span>)</p>
+    <p>Balance: <span id="balance">0</span> JBC</p>
   </body>
 </html>
